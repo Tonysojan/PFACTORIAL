@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9eff5;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #fefefe;
+  padding: 35px 45px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+  transition: all 0.3s ease;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #222;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #f7f9fc;
+  transition: border-color 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c63ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #534bdb;
+}
+
+@media screen and (max-width: 480px) {
+  .login-form {
+    padding: 20px 15px;
+  }
+
+  .login-title {
+    font-size: 20px;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
